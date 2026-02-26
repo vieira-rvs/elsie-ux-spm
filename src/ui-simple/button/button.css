@@ -1,0 +1,141 @@
+ .spm-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  padding: 0 16px;
+  height: 40px;
+  cursor: pointer;
+  transition:
+    background-color 150ms ease,
+    color 150ms ease,
+    box-shadow 150ms ease,
+    transform 100ms ease,
+    border-color 150ms ease,
+    opacity 150ms ease;
+  white-space: nowrap;
+}
+
+.spm-btn--full-width {
+  width: 100%;
+}
+
+.spm-btn--sm {
+  height: 32px;
+  font-size: 13px;
+  padding: 0 12px;
+}
+
+.spm-btn--md {
+  height: 40px;
+}
+
+.spm-btn--lg {
+  height: 48px;
+  font-size: 15px;
+  padding: 0 20px;
+}
+
+.spm-btn--primary {
+  background-color: #2563eb;
+  color: #ffffff;
+  box-shadow: 0 8px 16px rgba(37, 99, 235, 0.25);
+}
+
+.spm-btn--primary:hover:not(:disabled) {
+  background-color: #1d4ed8;
+}
+
+.spm-btn--primary:active:not(:disabled) {
+  background-color: #1e40af;
+  transform: translateY(1px);
+  box-shadow: 0 4px 10px rgba(30, 64, 175, 0.3);
+}
+
+.spm-btn--secondary {
+  background-color: #ffffff;
+  color: #1d4ed8;
+  border-color: #bfdbfe;
+}
+
+.spm-btn--secondary:hover:not(:disabled) {
+  background-color: #eff6ff;
+}
+
+.spm-btn--secondary:active:not(:disabled) {
+  background-color: #dbeafe;
+  transform: translateY(1px);
+}
+
+.spm-btn--ghost {
+  background-color: transparent;
+  color: #1f2933;
+}
+
+.spm-btn--ghost:hover:not(:disabled) {
+  background-color: rgba(15, 23, 42, 0.04);
+}
+
+.spm-btn--ghost:active:not(:disabled) {
+  background-color: rgba(15, 23, 42, 0.08);
+  transform: translateY(1px);
+}
+
+.spm-btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+  box-shadow: none;
+}
+
+.spm-btn__label {
+  display: inline-flex;
+  align-items: center;
+}
+
+.spm-btn__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+
+.spm-btn__icon--left {
+  margin-right: 4px;
+}
+
+.spm-btn__icon--right {
+  margin-left: 4px;
+}
+
+.spm-btn--loading {
+  position: relative;
+}
+
+.spm-btn--loading .spm-btn__label {
+  opacity: 0.8;
+}
+
+.spm-btn__spinner {
+  position: absolute;
+  right: 12px;
+  width: 14px;
+  height: 14px;
+  border-radius: 999px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-top-color: #ffffff;
+  animation: spm-btn-spin 0.7s linear infinite;
+}
+
+@keyframes spm-btn-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
